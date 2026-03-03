@@ -14,7 +14,7 @@ public class VerificationPage {
         codeField.shouldBe(Condition.visible);
     }
 
-    public DashboardPage verify(String code) {
+    public DashboardPage validVerify(String code) {
         codeField.setValue(code);
         verifyButton.click();
         return new DashboardPage();

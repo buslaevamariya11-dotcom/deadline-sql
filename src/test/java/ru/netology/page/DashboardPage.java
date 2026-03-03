@@ -10,10 +10,7 @@ public class DashboardPage {
     private SelenideElement heading = $("h2");
 
     public DashboardPage() {
-        heading.shouldBe(Condition.visible);
-    }
-
-    public boolean isPageOpened() {
-        return heading.exists();
+        heading.shouldBe(Condition.visible)
+                .shouldHave(Condition.text("Личный кабинет"));
     }
 }
